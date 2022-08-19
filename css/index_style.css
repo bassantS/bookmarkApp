@@ -1,0 +1,21 @@
+
+.title
+{
+    color: #AAA;
+}
+.bookmarkContainer
+{
+    background-color: #eee;
+}
+.bookmarkContainer .bookmarkTitle
+{
+    font-size: 20px;
+}
+.hidevisibility
+{
+    visibility: hidden;
+}
+.visiblevisibility
+{
+    visibility: visible;
+}

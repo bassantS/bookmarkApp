@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/index_style.css">
+    </head>
+    <body>
+        <div class="w-75 m-auto">
+        <h1 class="title">Book Marker</h1>
+        </div>
+        <div class="container bookmarkContainer p-5 text-center">
+        <p class="text-dark fw-bolder bookmarkTitle">Bookmark your favorite sites</p>
+            <div class="my-4">
+                <label class="text-dark fw-bold mb-2">Site Name</label>
+                <input id="siteName" class="form-control" placeholder="Bookmark Name">
+            </div>
+            <div id="webNameValidation"></div>
+            <div class="my-4">
+                <label class="text-dark fw-bold  mb-2">Site Url</label>
+                <input id="siteUrl" class="form-control" placeholder="Website URL">
+            </div>
+            <div id="webUrlValidation"></div>
+            <div id="buttonsContainer"> 
+                <button onclick="addBookmark()" class="btn btn-info text-white">Submit</button>
+            </div>
+        </div>
+        <div class="container p-2">
+            <input  onkeyup="searchBookmark(this.value)" class="form-control w-75 m-auto my-5" placeholder="Search">
+            <table class="table border-top border">
+                <!-- <thead class="fw-bold text-info bg-dark">
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Url</th>
+                    <th class="text-info">Visit</th>
+                    <th class="text-warning">Update</th>
+                    <th class="text-danger">Delete</th>
+                    
+                </thead> -->
+                <tbody id="tBody">
+                </tbody>
+            </table>
+        </div>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/mine.js"></script>
+    </body>
+</html>
